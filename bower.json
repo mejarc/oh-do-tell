@@ -1,0 +1,9 @@
+{
+  "name": "oh-do-tell",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "~3.2.0",
+    "bootstrap-validator": "~0.8.1",
+    "h5f": "~1.1.1"
+  }
+}
