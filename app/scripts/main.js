@@ -4,10 +4,10 @@ $(function(){
   // modern form input types
   var inputForm = document.forms[0];
 
-  // H5F.setup(inputForm, {
-  //   requiredClass: 'required',
-  //   placeholderClass: 'placeholder'
-  // });
+  H5F.setup(inputForm, {
+    requiredClass: 'required',
+    placeholderClass: 'placeholder'
+  });
 
   $(inputForm).validator().on('submit', function(e){
     if (e.isDefaultPrevented()){
