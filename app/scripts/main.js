@@ -1,4 +1,5 @@
-$(function(){
+/*global H5F*/
+$(function() {
   'use strict';
   // polyfill for older browsers that don't support
   // modern form input types
@@ -9,11 +10,10 @@ $(function(){
     placeholderClass: 'placeholder'
   });
 
-  $(inputForm).validator().on('submit', function(e){
-    if (e.isDefaultPrevented()){
+  $(inputForm).validator().on('submit', function(e) {
+    if (e.isDefaultPrevented()) {
       $('#errorAlert').show();
-    }
-    else {
+    } else {
       $('#successAlert').show();
       e.preventDefault();
     }
